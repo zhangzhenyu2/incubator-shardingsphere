@@ -10,6 +10,6 @@ jdk:
 #  - openjdk7
 
 before_script:
-  - echo "MAVEN_OPTS='-Xmx1024m -XX:MaxPermSize=256m'" > ~/.mavenrc
+  - echo "MAVEN_OPTS='-Xmx1024m -XX:MaxPermSize=257m'" > ~/.mavenrc
 script:
   - mvn clean install cobertura:cobertura coveralls:report -DrepoToken="${COVERALLS_REPO_TOKEN}"
